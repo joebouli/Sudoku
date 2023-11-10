@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SudokuView">
+android:background="@drawable/unnamed"
+<attr name="board" format="color"/>
+        <attr name="letter" format="color"/>
+        <attr name="letterSolve" format="color"/>
+        <attr name="cellFill" format="color"/>
+        <attr name="cellHigh" format="color"/>
+        <attr name="cellError" format="color"/>
+
+
+    </declare-styleable>
+</resources>

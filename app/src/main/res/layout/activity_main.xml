@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    android:foregroundTint="#F4E6E6"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sudokuname"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#DDCECE"
+        android:textSize="80dp"
+        tools:ignore="SpUsage" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        app:srcCompat="@drawable/bottone" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        app:backgroundTint="#E0CDCE"
+        app:srcCompat="@drawable/help"
+
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        app:backgroundTint="#E0CDCE"
+        app:srcCompat="@drawable/info"
+
+
+        />
+
+
+</LinearLayout>

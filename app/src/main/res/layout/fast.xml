@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="0dp"
+    android:background="@drawable/unnamed"
+    android:foregroundTint="#E3CDCD">
+
+    <com.example.sudoku.SudokuView
+        android:id="@+id/SudokuView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+
+
+        android:layout_marginEnd="1dp"
+
+        android:gravity="center"
+        android:scaleType="fitStart"
+        custom:board="#E3CDCD"
+        custom:cellError="#C60505"
+        custom:cellFill="#120C0D"
+        custom:cellHigh="#23191A"
+        custom:layout_constraintEnd_toStartOf="parent"
+        custom:layout_constraintStart_toEndOf="parent"
+
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:letter="#23978C"
+
+        custom:letterSolve="#E3CDCD" />
+
+
+    <Chronometer
+        android:id="@+id/simpleChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E3CDCD"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        custom:layout_constraintTop_toBottomOf="@+id/SudokuView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-11dp">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="OnePress"
+            android:text="@string/One"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="TwoPress"
+            android:text="@string/Two"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="TreePress"
+            android:text="@string/Three"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="FourPress"
+            android:text="@string/Four"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="FivePress"
+            android:text="@string/Five"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        custom:layout_constraintTop_toBottomOf="@+id/Layout1"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="SixPress"
+            android:text="@string/Six"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="SevenPress"
+            android:text="@string/Seven"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="EightPress"
+            android:text="@string/Eight"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:minWidth="48dp"
+            android:onClick="NinePress"
+            android:text="@string/Nine"
+            android:textColor="#E3CDCD"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginBottom="77dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:text="🅷🅸🅽🆃"
+        android:textColor="#E3CDCD"
+        android:textSize="30sp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintRight_toLeftOf="@id/buttonR"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/Layout2"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/buttonR"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="77dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:text="@string/Clear"
+        android:textColor="#E3CDCD"
+        android:textSize="30sp"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintLeft_toRightOf="@+id/button"
+        custom:layout_constraintTop_toBottomOf="@+id/Layout2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Home1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="311dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintHorizontal_bias="0.0"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/buttonR"
+        custom:srcCompat="@drawable/ic_launcher_round" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
